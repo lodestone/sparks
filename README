@@ -1,1 +1,20 @@
-Sparks is a rails plugin for handling static file content in your app
+Sparks is a rails plugin for handling static file content in your app.
+
+
+To install:
+
+script/plugin install git@github.com:lodestone/sparks.git
+
+=============
+
+1. script/generate sparks
+
+
+
+
+
+1. add this line to your route file as the last route:
+
+ map.spark '*:sparkpath', :controller => 'sparks', :action => 'file'
+
+2. 

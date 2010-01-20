@@ -1,0 +1,2 @@
+class StaticController < SparksController
+end

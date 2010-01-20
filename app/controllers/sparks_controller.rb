@@ -2,15 +2,16 @@ class SparksController < ApplicationController
 
   def file
 
-    chickens = params[:parameters] * '/'
+    chickens = params[:sparkpath] * '/'
     chickens[/\.(.*)$/]
     params[:format] = $1
  
-    respond_to do |wants|
-      wants.xml { render :text => 'xml' }
-      wants.html { render :text => 'html' }
+    static_file = params[:sparkpath].join('/')
+    if Dir.glob("#{Rails.root}/app/views/sparks/#{static_file}.*").empty?
+      render :file => "#{RAILS_ROOT}/public/404.html", :layout => false, :status => 404
+    else
+      render :action => static_file and return
     end
-    
     
   end
 
