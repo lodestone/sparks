@@ -27,12 +27,14 @@ This plugin allows you to drop in "static" files into your Rails app that will u
 Example:
 
 /app/views/static/about-us.html.haml:
+<pre>
 <code>
  %h1 About Us
  .about
    We are great.
 
 </code>
+</pre>
 
 Now you get <your-app>/about-us and <your-app>/about-us.html.
 
