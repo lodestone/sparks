@@ -44,5 +44,10 @@ You can also have nested paths like /about/us by creating sub-directories under 
 Really this is pretty dead-simple.
 
 
+This is Copyright Matt Petty (matt@kizmeta.com)
+
+License: MIT
+
+Sparks is named after my friend Jay. :-)
 
 
