@@ -26,17 +26,17 @@ This plugin allows you to drop in "static" files into your Rails app that will u
 
 Example:
 
- /app/views/static/about-us.html.haml:
- <code>
-  %h1 About Us
-  .about
-    We are great.
+/app/views/static/about-us.html.haml:
+<code>
+ %h1 About Us
+ .about
+   We are great.
 
- </code>
+</code>
 
- Now you get <your-app>/about-us and <your-app>/about-us.html.
+Now you get <your-app>/about-us and <your-app>/about-us.html.
 
- You can also have nested paths like /about/us by creating sub-directories under app/views/static.
+You can also have nested paths like /about/us by creating sub-directories under app/views/static.
  
 
 Really this is pretty dead-simple.
