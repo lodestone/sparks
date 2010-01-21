@@ -1,0 +1,24 @@
+h1. Sparks
+
+Sparks is a rails plugin for handling static file content in your app.
+
+
+h2. To install:
+
+script/plugin install git@github.com:lodestone/sparks.git
+
+=============
+
+# script/generate sparks
+# add this line as the last route in config/routes.rb:
+<code>
+ map.spark '*:sparkpath', :controller => 'sparks', :action => 'file'
+</code>
+ 
+
+
+h2. How to use
+
+
+
+
