@@ -5,19 +5,41 @@ Sparks is a rails plugin for handling static file content in your app.
 
 h2. To install:
 
-script/plugin install git@github.com:lodestone/sparks.git
-
-=============
-
-# script/generate sparks
-# add this line as the last route in config/routes.rb:
 <code>
- map.spark '*:sparkpath', :controller => 'sparks', :action => 'file'
+  script/plugin install git@github.com:lodestone/sparks.git
+</code>
+
+<code>
+  script/generate sparks
+</code>
+
+Add this line as the last route in config/routes.rb:
+<code>
+ map.spark '*:sparkpath', :controller => 'static', :action => 'file'
 </code>
  
 
 
 h2. How to use
+
+This plugin allows you to drop in "static" files into your Rails app that will use the app layout and templating (erb, haml, etc).
+
+Example:
+
+ /app/views/static/about-us.html.haml:
+ <code>
+  %h1 About Us
+  .about
+    We are great.
+
+ </code>
+
+ Now you get <your-app>/about-us and <your-app>/about-us.html.
+
+ You can also have nested paths like /about/us by creating sub-directories under app/views/static.
+ 
+
+Really this is pretty dead-simple.
 
 
 
